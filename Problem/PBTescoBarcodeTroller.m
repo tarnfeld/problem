@@ -79,7 +79,7 @@
     int odd;
     int checksum;
     
-    for (int i = 0; i < [_barcode length]; i++) {
+    for (int i = 1; i <= [_barcode length]; i++) {
         if (i % 2) {
             even += [[_barcode substringWithRange:NSMakeRange(i, 1)] intValue];
         } else {
