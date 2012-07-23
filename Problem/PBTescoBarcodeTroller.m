@@ -50,6 +50,7 @@
         @throw [NSException exceptionWithName:kPBTescoBarcodeTrollerException reason:@"Cannot troll a non existent barcode" userInfo:nil];
     }
     
+    NSLog(@"%@", _barcode);
     NSMutableString *trolledBarcode = [[NSMutableString alloc] initWithString:_barcode];
     
     // Prepend the magic number

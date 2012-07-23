@@ -10,7 +10,6 @@
 
 @interface ProblemTests : SenTestCase {
     
-    NSDictionary *barcodeTests;
 }
 
 @end

@@ -14,22 +14,20 @@
 - (void)setUp
 {
     [super setUp];
-    
-    NSArray *barcodes = [NSArray arrayWithObjects:@"5000221503354", @"0000010097403", nil];
-    NSArray *trolled = [NSArray arrayWithObjects:@"971500022150335460001008", @"971000001009740370010102", nil];
-    
-    barcodeTests = [[NSDictionary alloc] initWithObjects:barcodes forKeys:trolled];
 }
 
 - (void)tearDown
 {
-    barcodeTests = nil;
-    
     [super tearDown];
 }
 
 - (void)testTroller
 {
+    NSArray *barcodes = [NSArray arrayWithObjects:@"5000221503354", @"0000010097403", nil];
+    NSArray *trolled = [NSArray arrayWithObjects:@"971500022150335460001008", @"971000001009740370010102", nil];
+    
+    NSDictionary *barcodeTests = [[NSDictionary alloc] initWithObjects:barcodes forKeys:trolled];
+    
     [barcodeTests enumerateKeysAndObjectsUsingBlock:^(NSString *barcode, NSString *expectedTroll, BOOL *stop) {
         
         STAssertTrue([PBTescoBarcodeTroller trollReadyBarcode:barcode], @"Test if barcode is troll ready");
