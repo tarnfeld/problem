@@ -12,6 +12,7 @@
 @interface PBResultsViewController : UIViewController <UITextFieldDelegate> {
     
     NSString *_barcode;
+    NSString *_discountedBarcode;
     
     IBOutlet UILabel *_barcodeLabel;
     IBOutlet PBBarcodeView *_barcodeView;

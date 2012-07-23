@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E219138A15BDEE610041442E /* PBOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E219138615BDED6B0041442E /* PBOverlayViewController.m */; };
+		E219139115BDF5F70041442E /* PBOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E219138715BDED6B0041442E /* PBOverlayViewController.xib */; };
+		E219139215BDF5FF0041442E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2D7468D15BDD38600F04441 /* InfoPlist.strings */; };
+		E23336AE15BDFC6500B6A451 /* PBResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23336AC15BDFC6500B6A451 /* PBResultsViewController.m */; };
+		E23336AF15BDFC6500B6A451 /* PBResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23336AD15BDFC6500B6A451 /* PBResultsViewController.xib */; };
+		E233370315BE01C400B6A451 /* libOnBarcodeIPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E233370215BE01C400B6A451 /* libOnBarcodeIPhone.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E233371115BE046B00B6A451 /* libOnBarcodeIPhone-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E233371015BE046B00B6A451 /* libOnBarcodeIPhone-Simulator.a */; };
+		E233371615BE04D700B6A451 /* libOnBarcodeIPhone-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E233371015BE046B00B6A451 /* libOnBarcodeIPhone-Simulator.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E233371E15BE09C800B6A451 /* PBBarcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E233371D15BE09C800B6A451 /* PBBarcodeView.m */; };
 		E2D7468515BDD38600F04441 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D7468415BDD38600F04441 /* UIKit.framework */; };
 		E2D7468715BDD38600F04441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D7468615BDD38600F04441 /* Foundation.framework */; };
 		E2D7468915BDD38600F04441 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D7468815BDD38600F04441 /* CoreGraphics.framework */; };
@@ -16,7 +25,6 @@
 		E2D7469D15BDD38600F04441 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D7469C15BDD38600F04441 /* SenTestingKit.framework */; };
 		E2D7469E15BDD38600F04441 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D7468415BDD38600F04441 /* UIKit.framework */; };
 		E2D7469F15BDD38600F04441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D7468615BDD38600F04441 /* Foundation.framework */; };
-		E2D746A715BDD38600F04441 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2D746A515BDD38600F04441 /* InfoPlist.strings */; };
 		E2D746AA15BDD38600F04441 /* ProblemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D746A915BDD38600F04441 /* ProblemTests.m */; };
 		E2D746B415BDD40100F04441 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746B315BDD40100F04441 /* QuartzCore.framework */; };
 		E2D746B615BDD40D00F04441 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746B515BDD40D00F04441 /* CoreVideo.framework */; };
@@ -30,8 +38,6 @@
 		E2D746C715BDD47400F04441 /* libRedLaserSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746C315BDD45800F04441 /* libRedLaserSDK.a */; };
 		E2D746CC15BDD4A000F04441 /* PBRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D746CA15BDD4A000F04441 /* PBRootViewController.xib */; };
 		E2D746CD15BDD54B00F04441 /* PBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D746C915BDD4A000F04441 /* PBRootViewController.m */; };
-		E2D746DF15BDD73100F04441 /* PBOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D746DD15BDD73100F04441 /* PBOverlayViewController.m */; };
-		E2D746E015BDD73100F04441 /* PBOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D746DE15BDD73100F04441 /* PBOverlayViewController.xib */; };
 		E2D746E815BDDB0E00F04441 /* PBTescoBarcodeTroller.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D746E715BDDB0E00F04441 /* PBTescoBarcodeTroller.m */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +52,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E219138515BDED6B0041442E /* PBOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBOverlayViewController.h; sourceTree = "<group>"; };
+		E219138615BDED6B0041442E /* PBOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBOverlayViewController.m; sourceTree = "<group>"; };
+		E219138715BDED6B0041442E /* PBOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBOverlayViewController.xib; sourceTree = "<group>"; };
+		E23336AB15BDFC6500B6A451 /* PBResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBResultsViewController.h; sourceTree = "<group>"; };
+		E23336AC15BDFC6500B6A451 /* PBResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBResultsViewController.m; sourceTree = "<group>"; };
+		E23336AD15BDFC6500B6A451 /* PBResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBResultsViewController.xib; sourceTree = "<group>"; };
+		E233370215BE01C400B6A451 /* libOnBarcodeIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOnBarcodeIPhone.a; sourceTree = "<group>"; };
+		E233370515BE01E700B6A451 /* OBBarcodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBBarcodeUtils.h; sourceTree = "<group>"; };
+		E233370615BE01E700B6A451 /* OBDataMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDataMatrix.h; sourceTree = "<group>"; };
+		E233370715BE01E700B6A451 /* OBEnumUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBEnumUtil.h; sourceTree = "<group>"; };
+		E233370815BE01E700B6A451 /* OBGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBGlobal.h; sourceTree = "<group>"; };
+		E233370915BE01E700B6A451 /* OBLinear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLinear.h; sourceTree = "<group>"; };
+		E233370A15BE01E700B6A451 /* OBQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBQRCode.h; sourceTree = "<group>"; };
+		E233370B15BE01E700B6A451 /* OBWBarcodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBWBarcodeUtils.h; sourceTree = "<group>"; };
+		E233370C15BE01E700B6A451 /* OBWGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBWGlobal.h; sourceTree = "<group>"; };
+		E233370D15BE01E700B6A451 /* OBWIBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBWIBarcode.h; sourceTree = "<group>"; };
+		E233370E15BE01E700B6A451 /* OnBarcodeIPhone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBarcodeIPhone_Prefix.pch; sourceTree = "<group>"; };
+		E233371015BE046B00B6A451 /* libOnBarcodeIPhone-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libOnBarcodeIPhone-Simulator.a"; sourceTree = "<group>"; };
+		E233371C15BE09C800B6A451 /* PBBarcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBarcodeView.h; sourceTree = "<group>"; };
+		E233371D15BE09C800B6A451 /* PBBarcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBarcodeView.m; sourceTree = "<group>"; };
 		E2D7468015BDD38600F04441 /* Problem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Problem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D7468415BDD38600F04441 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2D7468615BDD38600F04441 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,9 +101,6 @@
 		E2D746C815BDD4A000F04441 /* PBRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBRootViewController.h; sourceTree = "<group>"; };
 		E2D746C915BDD4A000F04441 /* PBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBRootViewController.m; sourceTree = "<group>"; };
 		E2D746CA15BDD4A000F04441 /* PBRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBRootViewController.xib; sourceTree = "<group>"; };
-		E2D746DC15BDD73100F04441 /* PBOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBOverlayViewController.h; path = ../PBOverlayViewController.h; sourceTree = "<group>"; };
-		E2D746DD15BDD73100F04441 /* PBOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBOverlayViewController.m; path = ../PBOverlayViewController.m; sourceTree = "<group>"; };
-		E2D746DE15BDD73100F04441 /* PBOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PBOverlayViewController.xib; path = ../PBOverlayViewController.xib; sourceTree = "<group>"; };
 		E2D746E615BDDB0E00F04441 /* PBTescoBarcodeTroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBTescoBarcodeTroller.h; sourceTree = "<group>"; };
 		E2D746E715BDDB0E00F04441 /* PBTescoBarcodeTroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBTescoBarcodeTroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +122,8 @@
 				E2D7468715BDD38600F04441 /* Foundation.framework in Frameworks */,
 				E2D7468915BDD38600F04441 /* CoreGraphics.framework in Frameworks */,
 				E2D746C715BDD47400F04441 /* libRedLaserSDK.a in Frameworks */,
+				E233370315BE01C400B6A451 /* libOnBarcodeIPhone.a in Frameworks */,
+				E233371615BE04D700B6A451 /* libOnBarcodeIPhone-Simulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +135,51 @@
 				E2D7469E15BDD38600F04441 /* UIKit.framework in Frameworks */,
 				E2D7469F15BDD38600F04441 /* Foundation.framework in Frameworks */,
 				E2D746C515BDD45800F04441 /* libRedLaserSDK.a in Frameworks */,
+				E233371115BE046B00B6A451 /* libOnBarcodeIPhone-Simulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E23336A915BDFC4D00B6A451 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				E23336AB15BDFC6500B6A451 /* PBResultsViewController.h */,
+				E23336AC15BDFC6500B6A451 /* PBResultsViewController.m */,
+				E23336AD15BDFC6500B6A451 /* PBResultsViewController.xib */,
+			);
+			name = Results;
+			sourceTree = "<group>";
+		};
+		E233370415BE01C600B6A451 /* OnBarcode */ = {
+			isa = PBXGroup;
+			children = (
+				E233370515BE01E700B6A451 /* OBBarcodeUtils.h */,
+				E233370615BE01E700B6A451 /* OBDataMatrix.h */,
+				E233370715BE01E700B6A451 /* OBEnumUtil.h */,
+				E233370815BE01E700B6A451 /* OBGlobal.h */,
+				E233370915BE01E700B6A451 /* OBLinear.h */,
+				E233370A15BE01E700B6A451 /* OBQRCode.h */,
+				E233370B15BE01E700B6A451 /* OBWBarcodeUtils.h */,
+				E233370C15BE01E700B6A451 /* OBWGlobal.h */,
+				E233370D15BE01E700B6A451 /* OBWIBarcode.h */,
+				E233370E15BE01E700B6A451 /* OnBarcodeIPhone_Prefix.pch */,
+				E233371015BE046B00B6A451 /* libOnBarcodeIPhone-Simulator.a */,
+				E233370215BE01C400B6A451 /* libOnBarcodeIPhone.a */,
+			);
+			name = OnBarcode;
+			sourceTree = "<group>";
+		};
+		E233371B15BE09BB00B6A451 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				E233371C15BE09C800B6A451 /* PBBarcodeView.h */,
+				E233371D15BE09C800B6A451 /* PBBarcodeView.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
 		E2D7467515BDD38600F04441 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +202,7 @@
 		E2D7468315BDD38600F04441 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E233370415BE01C600B6A451 /* OnBarcode */,
 				E2D746C615BDD45B00F04441 /* RedLazerSDK */,
 				E2D746C115BDD43B00F04441 /* libstdc++.dylib */,
 				E2D746BF15BDD43200F04441 /* libiconv.dylib */,
@@ -158,12 +223,14 @@
 		E2D7468A15BDD38600F04441 /* Problem */ = {
 			isa = PBXGroup;
 			children = (
-				E2D746E215BDD73F00F04441 /* Root */,
-				E2D746E115BDD73700F04441 /* Overlay */,
+				E233371B15BE09BB00B6A451 /* Custom Views */,
 				E2D7469315BDD38600F04441 /* PBAppDelegate.h */,
 				E2D7469415BDD38600F04441 /* PBAppDelegate.m */,
 				E2D746E615BDDB0E00F04441 /* PBTescoBarcodeTroller.h */,
 				E2D746E715BDDB0E00F04441 /* PBTescoBarcodeTroller.m */,
+				E23336A915BDFC4D00B6A451 /* Results */,
+				E2D746E215BDD73F00F04441 /* Root */,
+				E2D746E115BDD73700F04441 /* Overlay */,
 				E2D7468B15BDD38600F04441 /* Supporting Files */,
 			);
 			path = Problem;
@@ -211,9 +278,9 @@
 		E2D746E115BDD73700F04441 /* Overlay */ = {
 			isa = PBXGroup;
 			children = (
-				E2D746DC15BDD73100F04441 /* PBOverlayViewController.h */,
-				E2D746DD15BDD73100F04441 /* PBOverlayViewController.m */,
-				E2D746DE15BDD73100F04441 /* PBOverlayViewController.xib */,
+				E219138515BDED6B0041442E /* PBOverlayViewController.h */,
+				E219138615BDED6B0041442E /* PBOverlayViewController.m */,
+				E219138715BDED6B0041442E /* PBOverlayViewController.xib */,
 			);
 			name = Overlay;
 			sourceTree = "<group>";
@@ -299,9 +366,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E219139115BDF5F70041442E /* PBOverlayViewController.xib in Resources */,
 				E2D7468F15BDD38600F04441 /* InfoPlist.strings in Resources */,
 				E2D746CC15BDD4A000F04441 /* PBRootViewController.xib in Resources */,
-				E2D746E015BDD73100F04441 /* PBOverlayViewController.xib in Resources */,
+				E23336AF15BDFC6500B6A451 /* PBResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D746A715BDD38600F04441 /* InfoPlist.strings in Resources */,
+				E219139215BDF5FF0041442E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,11 +404,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D746CD15BDD54B00F04441 /* PBRootViewController.m in Sources */,
 				E2D7469115BDD38600F04441 /* main.m in Sources */,
+				E2D746CD15BDD54B00F04441 /* PBRootViewController.m in Sources */,
 				E2D7469515BDD38600F04441 /* PBAppDelegate.m in Sources */,
-				E2D746DF15BDD73100F04441 /* PBOverlayViewController.m in Sources */,
+				E219138A15BDEE610041442E /* PBOverlayViewController.m in Sources */,
 				E2D746E815BDDB0E00F04441 /* PBTescoBarcodeTroller.m in Sources */,
+				E23336AE15BDFC6500B6A451 /* PBResultsViewController.m in Sources */,
+				E233371E15BE09C800B6A451 /* PBBarcodeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -47,13 +47,22 @@
 {
     _barcode = barcode;
     
+    [self updateDiscountedBarcode];
     [self updateView];
 }
 
 - (void)updateView
 {
-    [_barcodeLabel setText:_barcode];
-    [_barcodeView setBarcode:_barcode];
+    [_barcodeLabel setText:_discountedBarcode];
+    [_barcodeView setBarcode:_discountedBarcode];
+}
+
+- (void)updateDiscountedBarcode
+{
+    PBTescoBarcodeTroller *tesco = [[PBTescoBarcodeTroller alloc] initWithBarcode:_barcode];
+    [tesco setPrice:[NSNumber numberWithInt:[[_priceField text] intValue]]];
+    
+    _discountedBarcode = [tesco trollAway];
 }
 
 - (void)viewDidLoad
@@ -79,7 +88,7 @@
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-//    [self updateBarcode];
+    [self updateDiscountedBarcode];
     [self updateView];
 }
 

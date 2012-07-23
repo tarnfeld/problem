@@ -9,7 +9,6 @@
 #import "PBRootViewController.h"
 #import "PBOverlayViewController.h"
 #import "PBResultsViewController.h"
-
 #import "PBTescoBarcodeTroller.h"
 
 @interface PBRootViewController ()
@@ -78,12 +77,7 @@
     
     if (result && [PBTescoBarcodeTroller trollReadyBarcode:barcodeString]) {
         
-        PBTescoBarcodeTroller *tesco = [[PBTescoBarcodeTroller alloc] initWithBarcode:barcodeString];
-        [tesco setPrice:[NSNumber numberWithInt:10]];
-        
-        NSString *barcode = [tesco trollAway];
-        
-        PBResultsViewController *resultsViewController = [[PBResultsViewController alloc] initWithBarcode:barcode];
+        PBResultsViewController *resultsViewController = [[PBResultsViewController alloc] initWithBarcode:barcodeString];
         [_navController pushViewController:resultsViewController animated:YES];
     }
 }
