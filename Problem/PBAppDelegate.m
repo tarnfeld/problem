@@ -7,6 +7,7 @@
 //
 
 #import "PBAppDelegate.h"
+#import "PBRootViewController.h"
 
 @implementation PBAppDelegate
 
@@ -15,9 +16,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    PBRootViewController *rootViewController = [[PBRootViewController alloc] init];
+    [self.window setRootViewController:rootViewController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

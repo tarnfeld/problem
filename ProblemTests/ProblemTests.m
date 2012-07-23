@@ -7,6 +7,7 @@
 //
 
 #import "ProblemTests.h"
+#import "PBTescoBarcodeTroller.h"
 
 @implementation ProblemTests
 
@@ -14,19 +15,33 @@
 {
     [super setUp];
     
-    // Set-up code here.
+    NSArray *barcodes = [NSArray arrayWithObjects:@"5000221503354", @"0000010097403", nil];
+    NSArray *trolled = [NSArray arrayWithObjects:@"971500022150335460001008", @"971000001009740370010102", nil];
+    
+    barcodeTests = [[NSDictionary alloc] initWithObjects:barcodes forKeys:trolled];
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
+    barcodeTests = nil;
     
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testTroller
 {
-    STFail(@"Unit tests are not implemented yet in ProblemTests");
+    [barcodeTests enumerateKeysAndObjectsUsingBlock:^(NSString *barcode, NSString *expectedTroll, BOOL *stop) {
+        
+        STAssertTrue([PBTescoBarcodeTroller trollReadyBarcode:barcode], @"Test if barcode is troll ready");
+        
+        PBTescoBarcodeTroller *troller = [[PBTescoBarcodeTroller alloc] initWithBarcode:barcode];
+        [troller setPrice:[NSNumber numberWithInt:10]]; // 10p
+        
+        NSString *trolled = [troller trollAway];
+        
+        // Would like to use STAssertEquals but no ideawtf
+        STAssertEquals(expectedTroll, trolled, @"Test if trolled barcode is correct");
+    }];
 }
 
 @end

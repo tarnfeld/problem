@@ -8,6 +8,9 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface ProblemTests : SenTestCase
+@interface ProblemTests : SenTestCase {
+    
+    NSDictionary *barcodeTests;
+}
 
 @end

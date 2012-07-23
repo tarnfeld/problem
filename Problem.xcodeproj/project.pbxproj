@@ -18,6 +18,21 @@
 		E2D7469F15BDD38600F04441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D7468615BDD38600F04441 /* Foundation.framework */; };
 		E2D746A715BDD38600F04441 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2D746A515BDD38600F04441 /* InfoPlist.strings */; };
 		E2D746AA15BDD38600F04441 /* ProblemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D746A915BDD38600F04441 /* ProblemTests.m */; };
+		E2D746B415BDD40100F04441 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746B315BDD40100F04441 /* QuartzCore.framework */; };
+		E2D746B615BDD40D00F04441 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746B515BDD40D00F04441 /* CoreVideo.framework */; };
+		E2D746B815BDD41700F04441 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746B715BDD41700F04441 /* CoreMedia.framework */; };
+		E2D746BA15BDD41E00F04441 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746B915BDD41E00F04441 /* AVFoundation.framework */; };
+		E2D746BC15BDD42400F04441 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746BB15BDD42400F04441 /* OpenGLES.framework */; };
+		E2D746BE15BDD42A00F04441 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746BD15BDD42A00F04441 /* Security.framework */; };
+		E2D746C015BDD43200F04441 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746BF15BDD43200F04441 /* libiconv.dylib */; };
+		E2D746C215BDD43B00F04441 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746C115BDD43B00F04441 /* libstdc++.dylib */; };
+		E2D746C515BDD45800F04441 /* libRedLaserSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746C315BDD45800F04441 /* libRedLaserSDK.a */; };
+		E2D746C715BDD47400F04441 /* libRedLaserSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D746C315BDD45800F04441 /* libRedLaserSDK.a */; };
+		E2D746CC15BDD4A000F04441 /* PBRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D746CA15BDD4A000F04441 /* PBRootViewController.xib */; };
+		E2D746CD15BDD54B00F04441 /* PBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D746C915BDD4A000F04441 /* PBRootViewController.m */; };
+		E2D746DF15BDD73100F04441 /* PBOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D746DD15BDD73100F04441 /* PBOverlayViewController.m */; };
+		E2D746E015BDD73100F04441 /* PBOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D746DE15BDD73100F04441 /* PBOverlayViewController.xib */; };
+		E2D746E815BDDB0E00F04441 /* PBTescoBarcodeTroller.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D746E715BDDB0E00F04441 /* PBTescoBarcodeTroller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +50,36 @@
 		E2D7468415BDD38600F04441 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2D7468615BDD38600F04441 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2D7468815BDD38600F04441 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E2D7468C15BDD38600F04441 /* Problem-Info.plist */ = {isa = PBXFileReference; path = "Problem-Info.plist"; sourceTree = "<group>"; };
+		E2D7468C15BDD38600F04441 /* Problem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Problem-Info.plist"; sourceTree = "<group>"; };
 		E2D7468E15BDD38600F04441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E2D7469015BDD38600F04441 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E2D7469215BDD38600F04441 /* Problem-Prefix.pch */ = {isa = PBXFileReference; path = "Problem-Prefix.pch"; sourceTree = "<group>"; };
-		E2D7469315BDD38600F04441 /* PBAppDelegate.h */ = {isa = PBXFileReference; path = PBAppDelegate.h; sourceTree = "<group>"; };
+		E2D7469215BDD38600F04441 /* Problem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Problem-Prefix.pch"; sourceTree = "<group>"; };
+		E2D7469315BDD38600F04441 /* PBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBAppDelegate.h; sourceTree = "<group>"; };
 		E2D7469415BDD38600F04441 /* PBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBAppDelegate.m; sourceTree = "<group>"; };
 		E2D7469B15BDD38600F04441 /* ProblemTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProblemTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D7469C15BDD38600F04441 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E2D746A415BDD38600F04441 /* ProblemTests-Info.plist */ = {isa = PBXFileReference; path = "ProblemTests-Info.plist"; sourceTree = "<group>"; };
+		E2D746A415BDD38600F04441 /* ProblemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProblemTests-Info.plist"; sourceTree = "<group>"; };
 		E2D746A615BDD38600F04441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E2D746A815BDD38600F04441 /* ProblemTests.h */ = {isa = PBXFileReference; path = ProblemTests.h; sourceTree = "<group>"; };
+		E2D746A815BDD38600F04441 /* ProblemTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProblemTests.h; sourceTree = "<group>"; };
 		E2D746A915BDD38600F04441 /* ProblemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProblemTests.m; sourceTree = "<group>"; };
+		E2D746B315BDD40100F04441 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E2D746B515BDD40D00F04441 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E2D746B715BDD41700F04441 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E2D746B915BDD41E00F04441 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E2D746BB15BDD42400F04441 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E2D746BD15BDD42A00F04441 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E2D746BF15BDD43200F04441 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		E2D746C115BDD43B00F04441 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		E2D746C315BDD45800F04441 /* libRedLaserSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRedLaserSDK.a; sourceTree = "<group>"; };
+		E2D746C415BDD45800F04441 /* RedLaserSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedLaserSDK.h; sourceTree = "<group>"; };
+		E2D746C815BDD4A000F04441 /* PBRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBRootViewController.h; sourceTree = "<group>"; };
+		E2D746C915BDD4A000F04441 /* PBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBRootViewController.m; sourceTree = "<group>"; };
+		E2D746CA15BDD4A000F04441 /* PBRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBRootViewController.xib; sourceTree = "<group>"; };
+		E2D746DC15BDD73100F04441 /* PBOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBOverlayViewController.h; path = ../PBOverlayViewController.h; sourceTree = "<group>"; };
+		E2D746DD15BDD73100F04441 /* PBOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBOverlayViewController.m; path = ../PBOverlayViewController.m; sourceTree = "<group>"; };
+		E2D746DE15BDD73100F04441 /* PBOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PBOverlayViewController.xib; path = ../PBOverlayViewController.xib; sourceTree = "<group>"; };
+		E2D746E615BDDB0E00F04441 /* PBTescoBarcodeTroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBTescoBarcodeTroller.h; sourceTree = "<group>"; };
+		E2D746E715BDDB0E00F04441 /* PBTescoBarcodeTroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBTescoBarcodeTroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +87,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D746C215BDD43B00F04441 /* libstdc++.dylib in Frameworks */,
+				E2D746C015BDD43200F04441 /* libiconv.dylib in Frameworks */,
+				E2D746BE15BDD42A00F04441 /* Security.framework in Frameworks */,
+				E2D746BC15BDD42400F04441 /* OpenGLES.framework in Frameworks */,
+				E2D746BA15BDD41E00F04441 /* AVFoundation.framework in Frameworks */,
+				E2D746B815BDD41700F04441 /* CoreMedia.framework in Frameworks */,
+				E2D746B615BDD40D00F04441 /* CoreVideo.framework in Frameworks */,
+				E2D746B415BDD40100F04441 /* QuartzCore.framework in Frameworks */,
 				E2D7468515BDD38600F04441 /* UIKit.framework in Frameworks */,
 				E2D7468715BDD38600F04441 /* Foundation.framework in Frameworks */,
 				E2D7468915BDD38600F04441 /* CoreGraphics.framework in Frameworks */,
+				E2D746C715BDD47400F04441 /* libRedLaserSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +109,7 @@
 				E2D7469D15BDD38600F04441 /* SenTestingKit.framework in Frameworks */,
 				E2D7469E15BDD38600F04441 /* UIKit.framework in Frameworks */,
 				E2D7469F15BDD38600F04441 /* Foundation.framework in Frameworks */,
+				E2D746C515BDD45800F04441 /* libRedLaserSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +138,15 @@
 		E2D7468315BDD38600F04441 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2D746C615BDD45B00F04441 /* RedLazerSDK */,
+				E2D746C115BDD43B00F04441 /* libstdc++.dylib */,
+				E2D746BF15BDD43200F04441 /* libiconv.dylib */,
+				E2D746BD15BDD42A00F04441 /* Security.framework */,
+				E2D746BB15BDD42400F04441 /* OpenGLES.framework */,
+				E2D746B915BDD41E00F04441 /* AVFoundation.framework */,
+				E2D746B715BDD41700F04441 /* CoreMedia.framework */,
+				E2D746B515BDD40D00F04441 /* CoreVideo.framework */,
+				E2D746B315BDD40100F04441 /* QuartzCore.framework */,
 				E2D7468415BDD38600F04441 /* UIKit.framework */,
 				E2D7468615BDD38600F04441 /* Foundation.framework */,
 				E2D7468815BDD38600F04441 /* CoreGraphics.framework */,
@@ -106,8 +158,12 @@
 		E2D7468A15BDD38600F04441 /* Problem */ = {
 			isa = PBXGroup;
 			children = (
+				E2D746E215BDD73F00F04441 /* Root */,
+				E2D746E115BDD73700F04441 /* Overlay */,
 				E2D7469315BDD38600F04441 /* PBAppDelegate.h */,
 				E2D7469415BDD38600F04441 /* PBAppDelegate.m */,
+				E2D746E615BDDB0E00F04441 /* PBTescoBarcodeTroller.h */,
+				E2D746E715BDDB0E00F04441 /* PBTescoBarcodeTroller.m */,
 				E2D7468B15BDD38600F04441 /* Supporting Files */,
 			);
 			path = Problem;
@@ -141,6 +197,35 @@
 				E2D746A515BDD38600F04441 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2D746C615BDD45B00F04441 /* RedLazerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E2D746C315BDD45800F04441 /* libRedLaserSDK.a */,
+				E2D746C415BDD45800F04441 /* RedLaserSDK.h */,
+			);
+			name = RedLazerSDK;
+			sourceTree = "<group>";
+		};
+		E2D746E115BDD73700F04441 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				E2D746DC15BDD73100F04441 /* PBOverlayViewController.h */,
+				E2D746DD15BDD73100F04441 /* PBOverlayViewController.m */,
+				E2D746DE15BDD73100F04441 /* PBOverlayViewController.xib */,
+			);
+			name = Overlay;
+			sourceTree = "<group>";
+		};
+		E2D746E215BDD73F00F04441 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E2D746C815BDD4A000F04441 /* PBRootViewController.h */,
+				E2D746C915BDD4A000F04441 /* PBRootViewController.m */,
+				E2D746CA15BDD4A000F04441 /* PBRootViewController.xib */,
+			);
+			name = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2D7468F15BDD38600F04441 /* InfoPlist.strings in Resources */,
+				E2D746CC15BDD4A000F04441 /* PBRootViewController.xib in Resources */,
+				E2D746E015BDD73100F04441 /* PBOverlayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +336,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D746CD15BDD54B00F04441 /* PBRootViewController.m in Sources */,
 				E2D7469115BDD38600F04441 /* main.m in Sources */,
 				E2D7469515BDD38600F04441 /* PBAppDelegate.m in Sources */,
+				E2D746DF15BDD73100F04441 /* PBOverlayViewController.m in Sources */,
+				E2D746E815BDDB0E00F04441 /* PBTescoBarcodeTroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +433,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Problem/Problem-Prefix.pch";
 				INFOPLIST_FILE = "Problem/Problem-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -354,6 +448,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Problem/Problem-Prefix.pch";
 				INFOPLIST_FILE = "Problem/Problem-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -370,6 +468,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Problem/Problem-Prefix.pch";
 				INFOPLIST_FILE = "ProblemTests/ProblemTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -387,6 +489,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Problem/Problem-Prefix.pch";
 				INFOPLIST_FILE = "ProblemTests/ProblemTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -412,6 +518,7 @@
 				E2D746AF15BDD38600F04441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2D746B015BDD38600F04441 /* Build configuration list for PBXNativeTarget "ProblemTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +527,7 @@
 				E2D746B215BDD38600F04441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
