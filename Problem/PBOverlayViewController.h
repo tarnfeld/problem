@@ -10,8 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface PBOverlayViewController : CameraOverlayViewController {
-    
-    CAShapeLayer *rectLayer;
+
 }
 
 @end

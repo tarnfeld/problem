@@ -8,6 +8,9 @@
 
 #import "PBRootViewController.h"
 #import "PBOverlayViewController.h"
+#import "PBResultsViewController.h"
+
+#import "PBTescoBarcodeTroller.h"
 
 @interface PBRootViewController ()
 @end
@@ -21,8 +24,13 @@
     self = [super initWithNibName:@"PBRootViewController" bundle:nil];
     if (self) {
         
-        pickerController = [[BarcodePickerController alloc] init];
-		[pickerController setDelegate:self];
+        _pickerController = [[BarcodePickerController alloc] init];
+		[_pickerController setDelegate:self];
+        
+        [_pickerController setTitle:@"Scan Barcode"];
+        [[_pickerController navigationItem] setPrompt:@"Hold your device still over the barcode"];
+        
+        _navController = [[UINavigationController alloc] initWithRootViewController:_pickerController];
     }
     
     return self;
@@ -32,7 +40,7 @@
 {
     [super viewDidLoad];
     
-    [pickerController prepareToScan];
+    [_pickerController prepareToScan];
 }
 
 - (void)viewDidUnload
@@ -54,18 +62,30 @@
 - (IBAction)scanBarcode:(id)sender
 {
     PBOverlayViewController *overlayController = [[PBOverlayViewController alloc] init];
-    [pickerController setOverlay:overlayController];
+    [_pickerController setOverlay:overlayController];
     
-    [self presentModalViewController:pickerController animated:YES];
+    [[_navController navigationBar] setTintColor:[UIColor colorWithRed:0.004 green:0.329 blue:0.624 alpha:1.000]];
+    
+    [self presentModalViewController:_navController animated:YES];
 }
 
 #pragma mark - BarcodePickerControllerDelegate
 
-- (void) barcodePickerController:(BarcodePickerController*)picker 
-                   returnResults:(NSSet *)results
+- (void) barcodePickerController:(BarcodePickerController*)picker returnResults:(NSSet *)results
 {
+    BarcodeResult *result = (BarcodeResult *) [results anyObject];
+    NSString *barcodeString = [result barcodeString];
     
-    NSLog(@"%@", results);
+    if (result && [PBTescoBarcodeTroller trollReadyBarcode:barcodeString]) {
+        
+        PBTescoBarcodeTroller *tesco = [[PBTescoBarcodeTroller alloc] initWithBarcode:barcodeString];
+        [tesco setPrice:[NSNumber numberWithInt:10]];
+        
+        NSString *barcode = [tesco trollAway];
+        
+        PBResultsViewController *resultsViewController = [[PBResultsViewController alloc] initWithBarcode:barcode];
+        [_navController pushViewController:resultsViewController animated:YES];
+    }
 }
 
 @end

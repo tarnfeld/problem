@@ -38,6 +38,8 @@
             NSDictionary *userInfo = [NSDictionary dictionaryWithObject:barcode forKey:@"barcode"];
             @throw [NSException exceptionWithName:kPBTescoBarcodeTrollerException reason:@"Cannot instanciate barcode troller with invalid barcode" userInfo:userInfo];
         }
+        
+        _barcode = barcode;
     }
     
     return self;
@@ -50,7 +52,6 @@
         @throw [NSException exceptionWithName:kPBTescoBarcodeTrollerException reason:@"Cannot troll a non existent barcode" userInfo:nil];
     }
     
-    NSLog(@"%@", _barcode);
     NSMutableString *trolledBarcode = [[NSMutableString alloc] initWithString:_barcode];
     
     // Prepend the magic number
@@ -81,9 +82,9 @@
     
     for (int i = 1; i <= [_barcode length]; i++) {
         if (i % 2) {
-            even += [[_barcode substringWithRange:NSMakeRange(i, 1)] intValue];
+            even += [[_barcode substringWithRange:NSMakeRange(i - 1, 1)] intValue];
         } else {
-            odd += [[_barcode substringWithRange:NSMakeRange(i, 1)] intValue];
+            odd += [[_barcode substringWithRange:NSMakeRange(i - 1, 1)] intValue];
         }
     }
     

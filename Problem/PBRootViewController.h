@@ -13,7 +13,8 @@
     
     __weak IBOutlet UIButton *_scanButton;
     
-    BarcodePickerController *pickerController;
+    UINavigationController *_navController;
+    BarcodePickerController *_pickerController;
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *scanButton;
